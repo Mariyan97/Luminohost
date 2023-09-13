@@ -7,6 +7,7 @@
   --Yellow: #edf1d6;
   --White: #f2f3e8;
   --black-green: #181f17;
+  --green-gray: #313430;
 }
 
 * {
@@ -23,6 +24,7 @@
   align-items: center;
   max-height: 61px;
   padding: 2% 0%;
+  background-color: inherit;
 }
 
 li {
@@ -70,3 +72,77 @@ a {
 }
 
 /* Landing-Page */
+
+.Landing-container {
+  padding: 100px;
+  background-color: var(--White);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.landing-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  max-width: 650px;
+  font-size: 61px;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--black-green);
+}
+
+p {
+  max-width: 450px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 16px;
+  color: var(--green-gray);
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.Btn-landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 32px;
+  background-color: var(--black-green);
+  color: var(--White);
+  border-radius: 12px;
+  font-size: 14px;
+  transition: 250ms ease-in-out;
+}
+.Btn-landing:hover {
+  background-color: inherit;
+  color: var(--black-green);
+  font-size: 16px;
+  border: 1px solid var(--black-green);
+}
+
+.Btn-landing-right {
+  color: var(--black-green);
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 250ms ease-in-out;
+}
+
+.Btn-landing-right:hover {
+  font-size: 18px;
+}
