@@ -159,12 +159,9 @@ p {
 .container-two {
   background-image: url("/Images/bg.png");
   background-repeat: no-repeat;
-  background-attachment: absolute;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
-  max-height: auto;
   padding-top: 100px;
 }
 
@@ -278,7 +275,8 @@ input[type="placeholder"] {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 100px 0px;
+  padding-top: 100px;
+  padding-bottom: 120px;
 }
 
 .three-left {
@@ -367,4 +365,70 @@ h3 {
   flex-direction: column;
   gap: 32px;
   padding-bottom: 35px;
+}
+
+/* fourth section */
+
+.fourth-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 150px 0%;
+  align-items: center;
+  background-color: var(--White);
+}
+
+.fourth-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button-cointainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 500px;
+}
+
+.data-centers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 8px;
+  width: 153px;
+  height: 109px;
+  background: hsla(126, 23%, 49%, 1);
+
+  background: linear-gradient(
+    270deg,
+    hsla(126, 23%, 49%, 1) 0%,
+    hsla(106, 16%, 27%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    270deg,
+    hsla(126, 23%, 49%, 1) 0%,
+    hsla(106, 16%, 27%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    270deg,
+    hsla(126, 23%, 49%, 1) 0%,
+    hsla(106, 16%, 27%, 1) 100%
+  );
+  border-radius: 20px;
+  color: var(--White);
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.data-centers:hover {
+  font-size: 18px;
+  filter: drop-shadow(0px 0px 6px #609966);
 }
