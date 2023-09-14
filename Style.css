@@ -157,15 +157,21 @@ p {
 /* Section-Two */
 
 .container-two {
+  background-image: url("/Images/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  background-size: cover;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 100px 10%;
+  max-width: 100%;
+  max-height: auto;
+  padding-top: 100px;
 }
 
 .search-domain {
   display: flex;
+  align-self: center;
+  margin-bottom: 100px;
   justify-content: space-around;
   align-items: center;
   width: 862px;
@@ -218,6 +224,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 26px;
 }
 label {
   position: relative;
@@ -262,5 +269,102 @@ input[type="placeholder"] {
   color: var(--White);
 }
 .white {
+  color: var(--White);
+}
+
+/* third-section */
+
+.container-three {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.three-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h2 {
+  font-size: 48px;
+  color: var(--White);
+  max-width: 400px;
+  line-height: 60px;
+  font-weight: 500;
+}
+.three-p {
+  text-align: left;
+  max-width: 400px;
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 500;
   color: var(--green-gray);
+}
+
+.three-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 168px;
+  height: 38px;
+  background-color: var(--black-green);
+  color: var(--White);
+  border-radius: 50px;
+}
+.three-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.container-right-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  width: 250px;
+  height: 280px;
+  padding: 0 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(214, 241, 208, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.vector-third {
+  width: 64px;
+  height: 65.09px;
+}
+
+h3 {
+  color: var(--black-green);
+}
+
+.left-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.right-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 35px;
 }
