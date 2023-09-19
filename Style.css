@@ -538,3 +538,29 @@ h5 {
   justify-content: center;
   gap: 32px;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--White);
+  padding: 50px 0px 0px 0px;
+}
+
+.email-subscribe {
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  text-align: center;
+}
+
+.logo-bottom {
+  max-width: 250px;
+}
