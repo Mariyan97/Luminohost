@@ -616,3 +616,6 @@ footer {
 .logo-bottom {
   max-width: 250px;
 }
+
+.green-hosting-text{
+  color: var(--black-green);
